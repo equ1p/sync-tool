@@ -1,0 +1,86 @@
+# ============================================
+# .NET build output
+# ============================================
+[Bb]in/
+[Bb]uild/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+
+# ============================================
+# Test results and code coverage (dotnet test, coverlet)
+# ============================================
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+coverage*.json
+coverage*.xml
+coverage*.info
+*.coverage
+*.coveragexml
+
+# ============================================
+# Log files produced by running the app
+# ============================================
+*.log
+
+# ============================================
+# Local sandbox folders for manual testing
+# ============================================
+sandbox/
+demo/
+test-source/
+test-replica/
+
+# ============================================
+# Visual Studio
+# ============================================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.DotSettings.user
+_ReSharper*/
+
+# ============================================
+# Visual Studio Code
+# ============================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ============================================
+# JetBrains Rider
+# ============================================
+.idea/
+*.sln.iml
+
+# ============================================
+# NuGet
+# ============================================
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+project.lock.json
+.nuget/
+
+# ============================================
+# Operating system files
+# ============================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+*~
