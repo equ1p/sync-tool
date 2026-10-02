@@ -72,7 +72,7 @@ public sealed class FolderSynchronizer
 
     private void EnsureReplicaRootExists(SyncSummary summary)
     {
-        if (!Directory.Exists(_replicaRoot))
+        if (Directory.Exists(_replicaRoot))
         {
             return;
         }
