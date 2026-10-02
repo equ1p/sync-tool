@@ -18,7 +18,7 @@ public sealed class TempFolder : IDisposable
     public string WriteFile(string relativePath, string content)
     {
         string fullPath = Combine(relativePath);
-        Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
+        Directory.CreateDirectory(Path.GetDirectoryName(fullPath)!);
         File.WriteAllText(fullPath, content);
         return fullPath;
     }
