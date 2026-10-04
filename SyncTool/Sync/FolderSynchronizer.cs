@@ -24,6 +24,11 @@ public sealed class FolderSynchronizer
 
     public SyncSummary Synchronize(CancellationToken cancellationToken = default)
     {
+        if (!Directory.Exists(_sourceRoot))
+        {
+            throw new DirectoryNotFoundException($"Source folder {_sourceRoot} does not exist.");
+        }
+
         var summary = new SyncSummary();
 
         HashSet<string> sourceDirectories = EnumerateRelative(_sourceRoot, EntryKind.Directory);
